@@ -837,11 +837,16 @@ const words = {
 
   // Handle game over
   function gameOver(win) {
-    if(!win){
-      statusText.textContent = `Game Over! The word was "${wordObj.word.toUpperCase()}"`;
-      disableLetterButtons();
-      restartBtn.style.display = "inline-block";
-    }
+  if (!win) {
+    // Show full word in display
+    wordDisplay.textContent = wordObj.word
+      .split("")
+      .map(letter => letter.toUpperCase())
+      .join(" ");
+    
+    statusText.textContent = `💀 Game Over! The word was "${wordObj.word.toUpperCase()}"`;
+  } else {
+    statusText.textContent = "🎉 You Win!";
   }
 
   // Pick random word by level
