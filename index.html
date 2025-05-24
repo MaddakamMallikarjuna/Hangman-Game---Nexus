@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!-- SEO -->
+ <meta name="description" content="Engage in daily word guessing challenges with our interactive Hangman game. Enhance your vocabulary and enjoy multiplayer fun.">
+ <meta name="description" content="Dive into endless fun with our interactive Hangman game — challenge your word skills, improve your vocabulary, and enjoy a sleek, user-friendly gaming experience! Perfect for players of all ages, our Hangman website offers daily puzzles, multiple difficulty levels, and exciting features to keep you hooked. Play now and sharpen your mind with the classic word guessing game reinvented for the digital age!">
+ <meta name="description" content="Experience the thrill of classic word-guessing with our interactive Hangman game. Challenge your vocabulary, enjoy daily puzzles, and compete with friends in real-time. Perfect for all ages – play now and sharpen your mind!">
+ <meta name="keywords" content="Hangman game, online word game, word guessing game, daily word puzzles, interactive hangman, vocabulary challenge, multiplayer word game, educational word game, classic word puzzle, brain teaser, free online games">
+<meta name="keywords" content="sudoku game, vocabulary game, word puzzle games, words game for student,hangman words, stickman hang, hangman helper, hangman solver, words hangman,fun words, english words, pharse english, ios games, serach word, serach words, meaning">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="style.css" />
+  
+<title>Interactive Hangman: Play Daily Word Guessing Puzzles Online ---Nexus</title>
+  
+</head>
+<body>
+  <h1>Hangman Game</h1>
+  <h5 style="padding: 2px; margin: 1px;">Welcome to the Ultimate Word Guessing Game</h5><br><br><br><br><br><br>
+  <div id="levelSelect">
+    <label for="level">Select starting word length:</label>
+    <select id="level">
+      <option value="3">3 Letters</option>
+      <option value="4">4 Letters</option>
+      <option value="5">5 Letters</option>
+    </select>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <div id="gameContainer">
+    <canvas id="gameCanvas" width="300" height="350"></canvas>
+    <div id="uiContainer" style="display:none;">
+      <div id="clue"></div>
+      <div id="wordDisplay"></div>
+      <div id="letters"></div>
+      <div id="status"></div>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <audio id="correctSound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+  <audio id="wrongSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+  <audio id="winSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-01.mp3"></audio>
+  <audio id="loseSound" src="https://www.soundjay.com/misc/sounds/fail-buzzer-01.mp3"></audio>
+</body>
+  <script defer src="script.js"></script>
+</html>
