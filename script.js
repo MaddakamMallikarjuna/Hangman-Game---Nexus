@@ -1,5 +1,4 @@
-const words = {
-  3: [
+const words = {3: [
   { word: "cat", clue: "A small domesticated animal." },
   { word: "sun", clue: "Bright object in the sky." },
   { word: "pen", clue: "Used for writing." },
@@ -838,11 +837,11 @@ const words = {
   // Handle game over
   function gameOver(win) {
     if(!win){
-      statusText.textContent = "Game Over! The word was  " + wordObj.word.toUpperCase();
+      statusText.textContent = "Game Over! The word was " + wordObj.word.toUpperCase();
       disableLetterButtons();
       restartBtn.style.display = "inline-block";
     }
-    
+}
   // Pick random word by level
   function pickRandomWord(level) {
     const pool = words[level] || words[3];
